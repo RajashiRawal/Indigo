@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  scroll-padding-top: 2rem;
+  scroll-behavior: 2rem;
+}
+body {
+  background-color: #daf1ff;
+}
+
+.first {
+  background-color: #fff8e5;
+  font-size: 16px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 30px;
+}
+
+.first span {
+  position: relative;
+  animation: first-animation 10s linear infinite;
+  animation-play-state: running;
+}
+.first:hover span,
+.first:active span {
+  animation-play-state: paused;
+}
+@keyframes first-animation {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+.nav-link:hover,
+.nav-link.active {
+  width: 100%;
+  .container-fluid {
+    font-family: Arial, sans-serif;
+    color: #000;
+    font-weight: 500;
+    padding: 10px 20px;
+  }
+}
+
+.nav-item:hover .nav-link {
+  border-bottom: 2px solid darkblue;
+
+  font-weight: bold;
+}
+
+.booking-container {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+
+  margin: auto;
+}
+.nav-tabs .nav-link.active {
+  background-color: #061790;
+  color: white;
+}
+
+.search-btn {
+  background: #ccc;
+  color: blue;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.box1 {
+  height: 90%;
+  width: 80%;
+  border: 1px solid grey;
+  border-radius: 3%;
+}
+
+.content {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: auto;
+  padding: auto;
+}
+.header h3 {
+  display: flex;
+  text-align: center;
+  padding-left: 3.9%;
+  margin-top: 3%;
+  font-size: 36px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
